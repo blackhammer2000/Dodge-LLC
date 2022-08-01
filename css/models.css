@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  border: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.719);
+  min-height: 100vh;
+  background-blend-mode: color;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: all 0.6s ease-in;
+  color: white;
+}
+
+.active {
+  color: crimson;
+  transition: color 0.5s ease-in;
+  border-color: crimson;
+}
+
+.container {
+  display: grid;
+  height: auto;
+  width: 90%;
+  place-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid crimson;
+}
+
+header .logo {
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 190px;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 2em;
+  list-style: none;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0.2em 0.5em;
+}
+
+header nav li a:hover {
+  color: rgba(255, 68, 0, 0.589);
+  border-color: crimson;
+  transition: all 0.3s ease-in-out;
+}
+
+.models-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
+  margin-top: 2em;
+}
+
+.models-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  border-bottom: 1px solid crimson;
+}
+
+.model-list {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.model-list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.model-list ul li {
+  list-style: none;
+  margin: 0.7em;
+}
+
+.model {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 10px;
+  padding: 0.8em;
+}
+
+.model .model-top-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.model-top-section .model-name {
+  display: grid;
+  place-items: center;
+  width: 40%;
+  height: auto;
+  font-size: 2.5em;
+  margin: 0 0.2em 0 0;
+}
+
+.model .model-image {
+  display: grid;
+  place-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+.model .model-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.model .model-description {
+  display: grid;
+  place-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin: 2em 0 0 0;
+  border-top: 1px solid white;
+}
+
+.model-description a {
+  color: cyan;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 50%;
+  color: rgba(255, 255, 255, 0.61);
+  border-top: 1px solid crimson;
+  padding-top: 2em;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  font-weight: 700;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin: 1em 2em;
+  list-style: none;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0.2em 0.5em;
+  letter-spacing: 1px;
+}
+
+footer ul a:hover {
+  color: crimson;
+  border-left: 1px solid crimson;
+  border-right: 1px solid crimson;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .trademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+footer .trademark a {
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}

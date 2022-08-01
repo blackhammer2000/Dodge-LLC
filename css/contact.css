@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  border: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg");
+  background-color: rgba(0, 0, 0, 0.719);
+  background-blend-mode: color;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.active {
+  color: crimson;
+  transition: color 0.5s ease-in;
+  border-color: crimson;
+}
+
+.container {
+  display: grid;
+  height: auto;
+  width: 90%;
+  place-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: auto;
+}
+
+header .logo {
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 190px;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 2em;
+  list-style: none;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0.2em 0.5em;
+}
+
+header nav li a:hover {
+  color: rgba(255, 68, 0, 0.589);
+  border-color: crimson;
+  transition: all 0.3s ease-in-out;
+}
+
+fieldset {
+  display: grid;
+  place-items: center;
+  width: 95%;
+  height: auto;
+  border: none;
+  border-top: 1px solid crimson;
+  padding: 1em 0;
+}
+
+legend {
+  margin-left: 5em;
+}
+
+.contact-form {
+  display: grid;
+  place-items: center;
+  width: 95%;
+  height: auto;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  width: 95%;
+  height: auto;
+}
+
+.contact-form .input {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 1.2em;
+}
+
+.input input,
+textarea {
+  width: 75%;
+  padding: 1.1em 1.2em;
+}
+
+.button input {
+  background-color: green;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button input:hover {
+  background-color: greenyellow;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 50%;
+  border-top: 1px solid crimson;
+  padding-top: 2em;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin: 1em 2em;
+  list-style: none;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0.2em 0.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer ul a:hover {
+  color: crimson;
+  border-left: 1px solid crimson;
+  border-right: 1px solid crimson;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .trademark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+footer .trademark a {
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}

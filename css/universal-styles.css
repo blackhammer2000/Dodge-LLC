@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  border: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+.active {
+  color: crimson;
+  transition: color 0.5s ease-in;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  letter-spacing: 2px;
+  background-size: cover;
+  background-image: url("../images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg");
+  background-color: rgba(0, 0, 0, 0.596);
+  background-blend-mode: color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+header .logo {
+  display: grid;
+  place-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  padding: 0 3em 0 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 2em 0 2em;
+  list-style: none;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+header nav li a:hover {
+  color: rgba(255, 68, 0, 0.589);
+}
+
+header nav li a::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+}
+
+header nav li a::before:hover {
+  width: 100%;
+  transition: width 1s ease-in-out;
+  background-color: rgba(255, 68, 0, 0.562);
+}
